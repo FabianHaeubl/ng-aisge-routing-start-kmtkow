@@ -15,7 +15,7 @@ import { RouterModule, Routes } from '@angular/router';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'class-list', component: ClassListComponent },
-  { path: 'class-detail', component: ClassDetailComponent },
+  { path: 'class-detail/:classname', component: ClassDetailComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 

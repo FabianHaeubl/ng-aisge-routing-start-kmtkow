@@ -16,7 +16,7 @@ export class ClassListComponent implements OnInit {
     this.classNames = this.dataService.getClassNames();
   }
 
-  openDetail(cn: string): void {
-    this.router.navigateByUrl('/class-detail?classname=' + cn);
+  openDetail(classname: string): void {
+    this.router.navigate(['class-detail', classname]);
   }
 }
