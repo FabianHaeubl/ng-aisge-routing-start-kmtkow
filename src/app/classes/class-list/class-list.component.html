@@ -1,6 +1,12 @@
 <div class="container-fluid">
   <h2>Classes</h2>
   <ul class="list-group">
-    <li class="list-group-item" *ngFor="let cn of classNames">{{ cn }}</li>
+    <li
+      class="list-group-item"
+      *ngFor="let cn of classNames"
+      (click)="this.openDetail(cn)"
+    >
+      {{ cn }}
+    </li>
   </ul>
 </div>
